@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @types/cors
+
+PATH: 
+  C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\Raimunda\AppData\Local\Microsoft\WindowsApps;C:\Users\Raimunda\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Raimunda\AppData\Local\GitHubDesktop\bin;C:\Users\Raimunda\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\Raimunda\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.18.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Raimunda\www\happy-server-master\node_modules\sqlite3\lib\binding\napi-v3-win32-x64\node_sqlite3.node'
+
+npm manifest: 
+  {
+    "name": "happy-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+      "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    },
+    "dependencies": {
+      "@types/multer": "^1.4.4",
+      "@types/yup": "^0.29.8",
+      "express": "^4.17.1",
+      "express-async-errors": "^3.1.1",
+      "multer": "^1.4.2",
+      "sqlite3": "^5.0.0",
+      "typeorm": "^0.2.28",
+      "yup": "^0.29.3"
+    },
+    "devDependencies": {
+      "@types/express": "^4.17.8",
+      "@typescript-eslint/eslint-plugin": "^4.4.1",
+      "@typescript-eslint/parser": "^4.4.1",
+      "eslint": "^7.11.0",
+      "eslint-config-airbnb-base": "^14.2.0",
+      "eslint-config-prettier": "^6.12.0",
+      "eslint-import-resolver-typescript": "^2.3.0",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-prettier": "^3.1.4",
+      "prettier": "^2.1.2",
+      "ts-node-dev": "^1.0.0-pre.63",
+      "typescript": "^4.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
